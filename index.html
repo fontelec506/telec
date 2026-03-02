@@ -38,7 +38,7 @@ p{
     font-size:18px;
 }
 
-/* BOTONES NUEVOS */
+/* BOTONES */
 .botones{
     margin-top:30px;
 }
@@ -54,7 +54,6 @@ p{
     transition:all 0.3s ease;
 }
 
-/* WhatsApp */
 .whatsapp{
     background:#25D366;
     color:white;
@@ -62,10 +61,8 @@ p{
 
 .whatsapp:hover{
     background:#1ebe5d;
-    transform:translateY(-2px);
 }
 
-/* Correo */
 .correo{
     background:#007BFF;
     color:white;
@@ -73,12 +70,6 @@ p{
 
 .correo:hover{
     background:#0056b3;
-    transform:translateY(-2px);
-}
-
-.contacto-info{
-    margin-top:20px;
-    font-size:15px;
 }
 
 /* SERVICIOS */
@@ -108,15 +99,50 @@ p{
     padding:30px;
     border-radius:12px;
     box-shadow:0 6px 15px rgba(0,0,0,0.08);
-    transition:0.3s;
 }
 
-.card h3{
-    color:#007BFF;
+/* FORMULARIO */
+.formulario{
+    background:#0A1F44;
+    padding:80px 20px;
+    text-align:center;
 }
 
-.card:hover{
-    transform:translateY(-6px);
+.form-box{
+    max-width:650px;
+    margin:auto;
+    background:white;
+    padding:40px;
+    border-radius:12px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.15);
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+    color:#2C2C2C;
+}
+
+input, select, textarea{
+    padding:12px;
+    border-radius:6px;
+    border:1px solid #ddd;
+    font-size:15px;
+    outline:none;
+}
+
+textarea{
+    resize:none;
+    height:120px;
+}
+
+.btn-enviar{
+    background:#F57C00;
+    color:white;
+    border:none;
+    padding:14px;
+    font-weight:600;
+    border-radius:6px;
+    cursor:pointer;
+    font-size:15px;
 }
 
 /* FOOTER */
@@ -142,25 +168,12 @@ p{
 <p>
 En FONTELEC ofrecemos soluciones integrales en fontanería industrial y residencial,
 mantenimiento electromecánico y servicios técnicos especializados.
-Trabajamos con altos estándares de calidad, responsabilidad y compromiso,
-garantizando eficiencia, seguridad y resultados duraderos en cada proyecto.
+Trabajamos con altos estándares de calidad y compromiso.
 </p>
 
 <div class="botones">
-
-<a class="boton whatsapp" href="https://wa.me/50672432216" target="_blank">
-WhatsApp
-</a>
-
-<a class="boton correo" href="mailto:fcontratistaelectromecanico@gmail.com">
-Correo Electrónico
-</a>
-
-</div>
-
-<div class="contacto-info">
-📞 +506 7243-2216 <br>
-✉ fcontratistaelectromecanico@gmail.com
+<a class="boton whatsapp" href="https://wa.me/50672432216" target="_blank">WhatsApp</a>
+<a class="boton correo" href="mailto:fcontratistaelectromecanico@gmail.com">Correo</a>
 </div>
 
 </section>
@@ -170,28 +183,37 @@ Correo Electrónico
 <h2>Nuestros Servicios</h2>
 
 <div class="grid">
-
-<div class="card">
-<h3>Fontanería Industrial</h3>
-<p>Instalación y mantenimiento de sistemas hidráulicos industriales.</p>
+<div class="card"><h3>Fontanería Industrial</h3></div>
+<div class="card"><h3>Fontanería Residencial</h3></div>
+<div class="card"><h3>Mantenimiento Electromecánico</h3></div>
+<div class="card"><h3>Instalaciones Técnicas</h3></div>
 </div>
 
-<div class="card">
-<h3>Fontanería Residencial</h3>
-<p>Reparaciones, instalaciones y soluciones completas para hogares.</p>
-</div>
+</section>
 
-<div class="card">
-<h3>Mantenimiento Electromecánico</h3>
-<p>Servicio técnico especializado para equipos y sistemas electromecánicos.</p>
-</div>
+<section class="formulario">
 
-<div class="card">
-<h3>Instalaciones Técnicas</h3>
-<p>Montaje profesional de sistemas técnicos bajo normativa y estándares de seguridad.</p>
-</div>
+<h2>Solicita una Cotización</h2>
 
-</div>
+<form class="form-box" onsubmit="enviarWhatsApp(); return false;">
+
+<input type="text" id="nombre" placeholder="Nombre Completo" required>
+<input type="email" id="correo" placeholder="Correo Electrónico" required>
+<input type="tel" id="telefono" placeholder="Número de Teléfono" required>
+
+<select id="servicio" required>
+<option value="">Seleccione el tipo de servicio</option>
+<option>Fontanería Industrial</option>
+<option>Fontanería Residencial</option>
+<option>Mantenimiento Electromecánico</option>
+<option>Instalaciones Técnicas</option>
+</select>
+
+<textarea id="mensaje" placeholder="Describe el trabajo que necesitas..." required></textarea>
+
+<button class="btn-enviar">Enviar Solicitud</button>
+
+</form>
 
 </section>
 
@@ -199,6 +221,29 @@ Correo Electrónico
 © 2026 FONTELEC | Costa Rica <br>
 📞 +506 7243-2216 | ✉ fcontratistaelectromecanico@gmail.com
 </div>
+
+<script>
+
+function enviarWhatsApp(){
+
+var nombre = document.getElementById("nombre").value;
+var correo = document.getElementById("correo").value;
+var telefono = document.getElementById("telefono").value;
+var servicio = document.getElementById("servicio").value;
+var mensaje = document.getElementById("mensaje").value;
+
+var texto = "Hola, quiero solicitar una cotización:%0A%0A"
++ "Nombre: " + nombre + "%0A"
++ "Correo: " + correo + "%0A"
++ "Teléfono: " + telefono + "%0A"
++ "Servicio: " + servicio + "%0A"
++ "Detalles: " + mensaje;
+
+window.open("https://wa.me/50672432216?text=" + texto, "_blank");
+
+}
+
+</script>
 
 </body>
 </html>
