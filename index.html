@@ -1,140 +1,95 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FONTELEC | Contratista Electromecánico</title>
+    <meta charset="UTF-8">
+    <title>FONTELEC | Fontanería y Electromecánica</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: white;
+            text-align: center;
+        }
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+        header {
+            background-color: #0a0f1c;
+            padding: 20px;
+        }
 
-<style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
-}
+        header img {
+            width: 180px;
+        }
 
-body{
-background:linear-gradient(135deg,#0f172a,#1e293b);
-color:white;
-}
+        .telefono {
+            color: #ffb400;
+            font-weight: bold;
+            margin-top: 10px;
+        }
 
-/* HEADER */
-header{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:15px 8%;
-background:rgba(0,0,0,0.5);
-position:fixed;
-width:100%;
-top:0;
-z-index:1000;
-}
+        .hero {
+            padding: 80px 20px;
+        }
 
-header img{
-height:60px;
-}
+        .hero img {
+            width: 200px;
+            margin-bottom: 20px;
+        }
 
-.telefono{
-font-weight:600;
-color:#f59e0b;
-}
+        h1 {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
 
-/* HERO */
-.hero{
-min-height:100vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding-top:120px;
-}
+        p {
+            font-size: 18px;
+            max-width: 700px;
+            margin: auto;
+            line-height: 1.6;
+        }
 
-.hero img{
-width:500px;
-max-width:90%;
-margin-bottom:40px;
-}
+        .boton {
+            display: inline-block;
+            margin-top: 40px;
+            padding: 15px 30px;
+            background-color: #ffb400;
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 8px;
+            font-size: 18px;
+        }
 
-.hero h1{
-font-size:42px;
-margin-bottom:20px;
-}
-
-.hero p{
-max-width:800px;
-font-size:18px;
-line-height:1.6;
-opacity:0.9;
-}
-
-.boton{
-display:inline-block;
-margin-top:35px;
-padding:15px 40px;
-background:#f59e0b;
-color:#0f172a;
-text-decoration:none;
-font-weight:600;
-border-radius:8px;
-transition:0.3s;
-}
-
-.boton:hover{
-background:#ffb703;
-transform:translateY(-3px);
-}
-
-.section{
-padding:80px 8%;
-text-align:center;
-background:#111827;
-}
-
-footer{
-background:#0f172a;
-text-align:center;
-padding:30px;
-font-size:14px;
-opacity:0.8;
-}
-</style>
+        .boton:hover {
+            background-color: #ffaa00;
+        }
+    </style>
 </head>
 
 <body>
 
 <header>
-<img src="logo.png" alt="FONTELEC Logo">
-<div class="telefono">
-📞 +506 7243-2216
-</div>
+    <img src="logo.jpg.jpeg" alt="FONTELEC Logo">
+    <div class="telefono">📞 +506 7243-2216</div>
 </header>
 
 <section class="hero">
+    <img src="logo.jpg.jpeg" alt="FONTELEC Logo">
 
-<!-- LOGO GRANDE -->
-<img src="logo.png" alt="FONTELEC Logo">
+    <h1>Soluciones Profesionales en Fontanería y Electromecánica</h1>
 
-<h1>Soluciones Profesionales en Fontanería y Electromecánica</h1>
+    <p>
+        En FONTELEC brindamos servicios especializados en fontanería industrial y residencial,
+        mantenimiento técnico y soluciones electromecánicas con altos estándares de calidad
+        en Costa Rica.
+    </p>
 
-<p>
-En FONTELEC brindamos servicios especializados en fontanería industrial 
-y residencial, mantenimiento técnico y soluciones electromecánicas 
-con altos estándares de calidad en Costa Rica.
-</p>
-
-<a href="https://wa.me/50672432216" target="_blank" class="boton">
-Contactar por WhatsApp
-</a>
-
+    <a class="boton" href="https://wa.me/50672432216" target="_blank">
+        Contactar por WhatsApp
+    </a>
 </section>
-
-<footer>
-© 2026 FONTELEC | Contratista Electromecánico | Costa Rica
-</footer>
 
 </body>
 </html>
