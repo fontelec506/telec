@@ -73,7 +73,7 @@ p{
     transform:translateY(-8px);
 }
 
-/* FORMULARIO PREMIUM */
+/* FORMULARIO */
 .formulario{
     background:#0A1F44;
     padding:100px 20px;
@@ -150,6 +150,41 @@ textarea{
     font-size:14px;
 }
 
+/* BOTONES FLOTANTES */
+.float-btn{
+    position:fixed;
+    right:20px;
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    box-shadow:0 6px 18px rgba(0,0,0,0.4);
+    transition:0.3s;
+    z-index:1000;
+}
+
+.float-btn img{
+    width:28px;
+}
+
+.float-btn:hover{
+    transform:scale(1.1);
+}
+
+/* WhatsApp abajo */
+.whatsapp-float{
+    bottom:20px;
+    background:#25D366;
+}
+
+/* Correo arriba del WhatsApp */
+.email-float{
+    bottom:90px;
+    background:#007BFF;
+}
+
 /* ANIMACIONES */
 @keyframes fadeIn{
     from{opacity:0;}
@@ -211,7 +246,6 @@ Solicitud preparada correctamente. Redirigiendo a WhatsApp...
 </div>
 
 </form>
-
 </section>
 
 <div class="footer">
@@ -219,8 +253,16 @@ Solicitud preparada correctamente. Redirigiendo a WhatsApp...
 📞 +506 7243-2216 | ✉ fcontratistaelectromecanico@gmail.com
 </div>
 
-<script>
+<!-- BOTONES FLOTANTES DERECHA -->
+<a href="mailto:fcontratistaelectromecanico@gmail.com" class="float-btn email-float">
+<img src="https://cdn-icons-png.flaticon.com/512/732/732200.png">
+</a>
 
+<a href="https://wa.me/50672432216" target="_blank" class="float-btn whatsapp-float">
+<img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
+</a>
+
+<script>
 function enviarWhatsApp(){
 
 var nombre = document.getElementById("nombre").value.trim();
@@ -248,7 +290,6 @@ window.open("https://wa.me/50672432216?text=" + texto, "_blank");
 }, 1200);
 
 }
-
 </script>
 
 </body>
