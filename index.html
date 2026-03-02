@@ -1,95 +1,171 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>FONTELEC | Fontanería y Electromecánica</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-            color: white;
-            text-align: center;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FONTELEC | Fontanería y Electromecánica</title>
 
-        header {
-            background-color: #0a0f1c;
-            padding: 20px;
-        }
+<style>
 
-        header img {
-            width: 180px;
-        }
+body{
+    margin:0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    color:white;
+}
 
-        .telefono {
-            color: #ffb400;
-            font-weight: bold;
-            margin-top: 10px;
-        }
+section{
+    padding:80px 20px;
+    text-align:center;
+}
 
-        .hero {
-            padding: 80px 20px;
-        }
+.hero img{
+    width:220px;
+    margin-bottom:30px;
+}
 
-        .hero img {
-            width: 200px;
-            margin-bottom: 20px;
-        }
+h1{
+    font-size:42px;
+    margin-bottom:20px;
+}
 
-        h1 {
-            font-size: 40px;
-            margin-bottom: 20px;
-        }
+p{
+    max-width:800px;
+    margin:auto;
+    line-height:1.8;
+    font-size:18px;
+}
 
-        p {
-            font-size: 18px;
-            max-width: 700px;
-            margin: auto;
-            line-height: 1.6;
-        }
+.boton{
+    display:inline-block;
+    margin-top:40px;
+    padding:15px 35px;
+    background:#ffb400;
+    color:black;
+    font-weight:bold;
+    text-decoration:none;
+    border-radius:8px;
+    font-size:18px;
+    transition:0.3s;
+}
 
-        .boton {
-            display: inline-block;
-            margin-top: 40px;
-            padding: 15px 30px;
-            background-color: #ffb400;
-            color: black;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 8px;
-            font-size: 18px;
-        }
+.boton:hover{
+    background:#ffaa00;
+}
 
-        .boton:hover {
-            background-color: #ffaa00;
-        }
-    </style>
+.servicios{
+    background:white;
+    color:#1c1c1c;
+}
+
+.servicios h2{
+    font-size:36px;
+    margin-bottom:50px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+    max-width:1000px;
+    margin:auto;
+}
+
+.card{
+    background:#f5f5f5;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h3{
+    margin-bottom:15px;
+}
+
+.footer{
+    background:#0a0f1c;
+    padding:30px;
+    text-align:center;
+    font-size:14px;
+}
+
+</style>
 </head>
 
 <body>
 
-<header>
-    <img src="logo.jpg.jpeg" alt="FONTELEC Logo">
-    <div class="telefono">📞 +506 7243-2216</div>
-</header>
-
 <section class="hero">
-    <img src="logo.jpg.jpeg" alt="FONTELEC Logo">
 
-    <h1>Soluciones Profesionales en Fontanería y Electromecánica</h1>
+<img src="logo.jpg.jpeg" alt="FONTELEC Logo">
 
-    <p>
-        En FONTELEC brindamos servicios especializados en fontanería industrial y residencial,
-        mantenimiento técnico y soluciones electromecánicas con altos estándares de calidad
-        en Costa Rica.
-    </p>
+<h1>Soluciones Profesionales en Fontanería y Electromecánica</h1>
 
-    <a class="boton" href="https://wa.me/50672432216" target="_blank">
-        Contactar por WhatsApp
-    </a>
+<p>
+En FONTELEC ofrecemos soluciones integrales en fontanería industrial y residencial,
+así como servicios especializados en mantenimiento electromecánico.
+Trabajamos con altos estándares de calidad, responsabilidad y compromiso,
+garantizando seguridad y eficiencia en cada proyecto que desarrollamos en Costa Rica.
+</p>
+
+<a class="boton" href="https://wa.me/50672432216" target="_blank">
+Contactar por WhatsApp
+</a>
+
 </section>
+
+
+<section class="servicios">
+
+<h2>Nuestros Servicios</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Fontanería Industrial</h3>
+<p>Instalación, reparación y mantenimiento de sistemas hidráulicos para empresas, industrias y proyectos de gran escala.</p>
+</div>
+
+<div class="card">
+<h3>Fontanería Residencial</h3>
+<p>Soluciones completas para hogares, incluyendo instalación de tuberías, reparación de fugas y sistemas sanitarios.</p>
+</div>
+
+<div class="card">
+<h3>Mantenimiento Electromecánico</h3>
+<p>Servicios técnicos especializados para equipos electromecánicos, garantizando funcionamiento eficiente y seguro.</p>
+</div>
+
+<div class="card">
+<h3>Instalaciones Técnicas</h3>
+<p>Montaje e instalación de sistemas técnicos con enfoque profesional, precisión y cumplimiento de normativas.</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section>
+
+<h2 style="font-size:34px; margin-bottom:30px;">¿Por Qué Elegirnos?</h2>
+
+<p>
+Nos distinguimos por nuestra ética profesional, cumplimiento en tiempos de entrega,
+atención personalizada y soluciones adaptadas a las necesidades específicas de cada cliente.
+En FONTELEC trabajamos con compromiso, innovación y excelencia técnica.
+</p>
+
+</section>
+
+
+<div class="footer">
+© 2026 FONTELEC | Costa Rica | +506 7243-2216
+</div>
 
 </body>
 </html>
