@@ -22,55 +22,63 @@ body{
 }
 
 .hero img{
-    width:340px;
+    width:320px;
     margin-bottom:40px;
 }
 
 h1{
-    font-size:42px;
+    font-size:40px;
     margin-bottom:20px;
 }
 
 p{
-    max-width:850px;
+    max-width:800px;
     margin:auto;
     line-height:1.8;
     font-size:18px;
 }
 
-/* BOTONES */
+/* BOTONES NUEVOS */
+.botones{
+    margin-top:30px;
+}
+
 .boton{
     display:inline-block;
-    margin-top:25px;
-    padding:15px 35px;
-    background:#F57C00;
-    color:white;
-    font-weight:bold;
+    padding:10px 22px;
+    margin:8px;
+    font-size:15px;
+    font-weight:600;
     text-decoration:none;
-    border-radius:8px;
-    font-size:18px;
-    transition:0.3s;
+    border-radius:6px;
+    transition:all 0.3s ease;
 }
 
-.boton:hover{
-    background:#d96c00;
+/* WhatsApp */
+.whatsapp{
+    background:#25D366;
+    color:white;
 }
 
-.boton-secundario{
-    display:inline-block;
-    margin-top:20px;
-    padding:15px 35px;
-    background:#2C2C2C;
+.whatsapp:hover{
+    background:#1ebe5d;
+    transform:translateY(-2px);
+}
+
+/* Correo */
+.correo{
+    background:#007BFF;
     color:white;
-    font-weight:bold;
-    text-decoration:none;
-    border-radius:8px;
-    font-size:18px;
+}
+
+.correo:hover{
+    background:#0056b3;
+    transform:translateY(-2px);
 }
 
 .contacto-info{
-    margin-top:25px;
-    font-size:16px;
+    margin-top:20px;
+    font-size:15px;
 }
 
 /* SERVICIOS */
@@ -82,7 +90,7 @@ p{
 }
 
 .servicios h2{
-    font-size:36px;
+    font-size:34px;
     margin-bottom:50px;
     color:#0A1F44;
 }
@@ -99,7 +107,7 @@ p{
     background:#f4f4f4;
     padding:30px;
     border-radius:12px;
-    box-shadow:0 8px 20px rgba(0,0,0,0.1);
+    box-shadow:0 6px 15px rgba(0,0,0,0.08);
     transition:0.3s;
 }
 
@@ -108,14 +116,14 @@ p{
 }
 
 .card:hover{
-    transform:translateY(-8px);
+    transform:translateY(-6px);
 }
 
 /* FOOTER */
 .footer{
     background:#2C2C2C;
     color:white;
-    padding:30px;
+    padding:25px;
     text-align:center;
     font-size:14px;
 }
@@ -138,15 +146,17 @@ Trabajamos con altos estándares de calidad, responsabilidad y compromiso,
 garantizando eficiencia, seguridad y resultados duraderos en cada proyecto.
 </p>
 
-<a class="boton" href="https://wa.me/50672432216" target="_blank">
-Contactar por WhatsApp
+<div class="botones">
+
+<a class="boton whatsapp" href="https://wa.me/50672432216" target="_blank">
+WhatsApp
 </a>
 
-<br>
-
-<a class="boton-secundario" href="mailto:fcontratistaelectromecanico@gmail.com">
-Enviar Correo Electrónico
+<a class="boton correo" href="mailto:fcontratistaelectromecanico@gmail.com">
+Correo Electrónico
 </a>
+
+</div>
 
 <div class="contacto-info">
 📞 +506 7243-2216 <br>
